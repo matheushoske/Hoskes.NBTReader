@@ -19,38 +19,40 @@ NBTReader supports reading and writing the following formats:
 
 Hoskes.NBTReader library is using .NET Standard 2.1
 
-### Using the Hoskes.NBTReader to deserialize an NBT File
+### Using the Hoskes.NBTReader to deserialize the following NBT File
+NBT File Tree:
+![image](https://github.com/matheushoske/Hoskes.NBTReader/assets/67081518/cb2e09a5-f292-4ae0-8b1e-bc60dc5843bf)
 
 ```csharp
-	LevelClass level = NBTFile.Deserialize<LevelClass>("mypath\\level.dat");
+LevelClass level = NBTFile.Deserialize<LevelClass>("mypath\\level.dat");
 ```
 Example class:
 ```csharp
-	class LevelClass
-	{
-		[NBTTagName("Data")]
-		public DataClass Data { get; set; }
-	}
-	class DataClass
-	{
-		[NBTTagName("Version")]
-		public VersionClass Version { get; set; }
+class LevelClass
+{
+	[NBTTagName("Data")]
+	public DataClass Data { get; set; }
+}
+class DataClass
+{
+	[NBTTagName("Version")]
+	public VersionClass Version { get; set; }
 
-		[NBTTagName("Difficulty")]
-		public int Difficulty { get; set; }
+	[NBTTagName("allowCommands")]
+	public bool AllowCommands { get; set; }
 
-		[NBTTagName("hardcore")]
-		public bool Hardcore { get; set; }
+	[NBTTagName("BorderSafeZone")]
+	public int BorderSafeZone { get; set; }
 
-		[NBTTagName("WasModded")]
-		public bool? WasModded { get; set; }
+	[NBTTagName("BorderDamagePerBlock")]
+	public double BorderDamagePerBlock { get; set; }
 
-		[NBTTagName("GameType")]
-		public bool GameType { get; set; }
-	}
-	class VersionClass
-	{
-		[NBTTagName("Name")]
-		public string Value { get; set; }
-	}
+	[NBTTagName("BorderSize")]
+	public long BorderSize { get; set; }
+}
+class VersionClass
+{
+	[NBTTagName("Name")]
+	public string Value { get; set; }
+}
 ```
