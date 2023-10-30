@@ -1,0 +1,9 @@
+bin
+obj
+*.suo
+*.user
+*.cache
+*.userprefs
+*.vs
+Staging/
+UpgradeLog*.htm
