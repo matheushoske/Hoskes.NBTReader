@@ -19,8 +19,7 @@ NBTReader supports reading and writing the following formats:
 
 Hoskes.NBTReader library is using .NET Standard 2.1
 
-### Using the Hoskes.NBTReader to deserialize the following NBT File
-NBT File Tree:
+### Using the Hoskes.NBTReader to deserialize the following NBT File Tree
 ![image](https://github.com/matheushoske/Hoskes.NBTReader/assets/67081518/cb2e09a5-f292-4ae0-8b1e-bc60dc5843bf)
 
 ```csharp
