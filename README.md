@@ -1,4 +1,4 @@
-# NBTReader
+# NBTReader (NBT Deserializer)
 
 Hoskes.NBTReader is an open-source NBT reader library for all common sources of NBT data. It's mainly intended for reading [Minecraft](http://www.minecraft.net) game data.
 With this library you can easy read NBT files deserializing it into .NET objects.
