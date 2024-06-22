@@ -13,4 +13,7 @@
     <HintPath>Reference\Substrate.dll</HintPath>
   </Reference>
 </ItemGroup>
+<ItemGroup>
+  <Folder Include="Properties\" />
+</ItemGroup>
 </Project>
